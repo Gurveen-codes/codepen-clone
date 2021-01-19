@@ -30,6 +30,15 @@ code {
   background-color: hsl(255, 6%, 25%);
 }
 
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+}
+
 .editor-title {
   display: flex;
   justify-content: space-between;
@@ -47,4 +56,12 @@ code {
   flex-grow: 1;
   overflow: hidden;
   border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.expand-collapse-btn {
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
