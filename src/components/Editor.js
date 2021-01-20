@@ -13,7 +13,7 @@ const Editor = (props) => {
 
   const [open, setOpen] = useState(true);
 
-  const handleChange = (editor, data, value) => {
+  const handleChange = (_editor, _data, value) => {
     onChange(value);
   };
 
